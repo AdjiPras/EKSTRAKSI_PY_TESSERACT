@@ -169,7 +169,7 @@ def ocr_pdf_cached(path, dpi=300, cache_dir=None, lang='ind+eng', num_processes=
             cleaned = cleaning_ocr_text(text)
             word_count = len(cleaned.split())
             if total_words + word_count > word_limit:
-                print("⚠️ Limit 50.000 kata tercapai, hentikan OCR.")
+                print("⚠️ Limit 25.000 kata tercapai, hentikan OCR.")
                 break
             total_words += word_count
             texts.append(cleaned)
